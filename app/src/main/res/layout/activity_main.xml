@@ -18,8 +18,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/caffe"
-            android:margin="30dp"/>
+            android:src="@drawable/caffe"/>
 
         <TextView
             android:layout_width="wrap_content"

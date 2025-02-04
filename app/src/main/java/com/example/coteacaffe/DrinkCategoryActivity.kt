@@ -1,20 +1,27 @@
 package com.example.coteacaffe
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class DrinkCategoryActivity : AppCompatActivity() {
+    private lateinit var listDrinks: ListView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_drink_category)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        listDrinks = findViewById(R.id.listDrinks)
+        val drinkArrayAdapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_list_item_1,
+            Drink.drinks
+        )
+
+        listDrinks.adapter = drinkArrayAdapter
     }
 }

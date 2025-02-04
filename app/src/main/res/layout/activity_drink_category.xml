@@ -5,6 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DrinkCategoryActivity">
+    tools:context=".DrinkCategoryActivity"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listDrinks">
+    </ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
