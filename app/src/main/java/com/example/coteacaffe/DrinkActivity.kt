@@ -5,16 +5,25 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.coteacaffe.databinding.ActivityDrinkBinding
 
 class DrinkActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityDrinkBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_drink)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        binding = ActivityDrinkBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        var drinkId = intent.getLongExtra("drinkId", -1)
+
+        var drink = Drink.drinks[drinkId.toInt()]
+
+        binding.icon.setImageResource(drink.img)
+        binding.title.text = drink.name
+        binding.description.text = drink.description
     }
 }

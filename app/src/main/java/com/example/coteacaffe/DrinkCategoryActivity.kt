@@ -1,5 +1,6 @@
 package com.example.coteacaffe
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
@@ -23,5 +24,9 @@ class DrinkCategoryActivity : AppCompatActivity() {
         )
 
         listDrinks.adapter = drinkArrayAdapter
+
+        listDrinks.setOnItemClickListener { _, _, _, id ->
+            startActivity(Intent(this, DrinkActivity::class.java).putExtra("drinkId", id))
+        }
     }
 }

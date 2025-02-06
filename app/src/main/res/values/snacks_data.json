@@ -1,0 +1,52 @@
+[
+  {
+    "name": "muffin",
+    "description": "Sweet muffin with chocolate sprinkles on the top. Tastes wonderful with a cup of fresh coffee.",
+    "img": "id"
+  },
+  {
+    "name": "croissant",
+    "description": "Flaky and buttery French pastry, perfect for breakfast or a snack.",
+    "img": "id"
+  },
+  {
+    "name": "donut",
+    "description": "Classic ring-shaped donut covered with pink glaze and colorful sprinkles.",
+    "img": "id"
+  },
+  {
+    "name": "pretzel",
+    "description": "Soft and salty pretzel with a golden brown crust, great with mustard or cheese dip.",
+    "img": "id"
+  },
+  {
+    "name": "brownie",
+    "description": "Rich and fudgy chocolate brownie with a crispy top and gooey center.",
+    "img": "id"
+  },
+  {
+    "name": "cheesecake",
+    "description": "Creamy cheesecake with a graham cracker crust and a hint of vanilla.",
+    "img": "id"
+  },
+  {
+    "name": "granola bar",
+    "description": "Healthy granola bar packed with oats, nuts, and honey for a perfect energy boost.",
+    "img": "id"
+  },
+  {
+    "name": "macaron",
+    "description": "Delicate French macaron with a crispy shell and creamy filling, available in various flavors.",
+    "img": "id"
+  },
+  {
+    "name": "churros",
+    "description": "Crispy, fried dough sticks coated in cinnamon sugar, best served with hot chocolate.",
+    "img": "id"
+  },
+  {
+    "name": "popcorn",
+    "description": "Light and crunchy popcorn, freshly popped and lightly salted for a classic snack.",
+    "img": "id"
+  }
+]
