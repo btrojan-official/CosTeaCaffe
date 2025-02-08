@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.coteacaffe'
+    namespace 'com.example.costeacaffe'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.example.coteacaffe"
+        applicationId "com.example.costeacaffe"
         minSdk 28
         targetSdk 35
         versionCode 1

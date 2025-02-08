@@ -1,4 +1,4 @@
-package com.example.coteacaffe
+package com.example.costeacaffe
 
 import android.content.Intent
 import android.os.Bundle

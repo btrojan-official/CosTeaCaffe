@@ -1,11 +1,9 @@
-package com.example.coteacaffe
+package com.example.costeacaffe
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.coteacaffe.databinding.ActivityDrinkBinding
+import com.example.costeacaffe.databinding.ActivityDrinkBinding
 
 class DrinkActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDrinkBinding

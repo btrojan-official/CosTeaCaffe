@@ -1,4 +1,4 @@
-package com.example.coteacaffe
+package com.example.costeacaffe
 
 class Drink (
     val name: String,

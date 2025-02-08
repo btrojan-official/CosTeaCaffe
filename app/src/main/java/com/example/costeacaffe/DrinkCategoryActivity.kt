@@ -1,4 +1,4 @@
-package com.example.coteacaffe
+package com.example.costeacaffe
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,6 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class DrinkCategoryActivity : AppCompatActivity() {
     private lateinit var listDrinks: ListView

@@ -1,4 +1,4 @@
-package com.example.coteacaffe
+package com.example.costeacaffe
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SnackCategoryActivity : AppCompatActivity() {
+class SnackActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_snack_category_acivity)
+        setContentView(R.layout.activity_snack)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
